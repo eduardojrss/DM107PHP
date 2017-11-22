@@ -1,0 +1,43 @@
+Servico Rest em PHP utilizando basic authentication:
+	username: admin
+	password: admin
+Media Type: application/json
+
+
+Método para inserir uma entrega
+Tipo : POST
+url: http://localhost/TrabalhoDM107PHPRest/src/public/entrega
+	retorna um json da entrega com com status 200 - sucesso e 500 erro interno
+	consome um json - exemplo: { 
+				"numero_pedido":1,
+				"nome_recebedor":"Fulano 1",
+				"cpf_recebedor":"11111111111",
+				"data_entrega":"2017-02-01"
+				}
+================================================================================
+
+Método para atualizar uma entrega
+Tipo: PUT
+url: http://localhost/TrabalhoDM107PHPRest/src/public/entrega/{id}
+	deve passar o id da entrega na url ({id})
+	retorna um json da entrega com com status 200 - sucesso e 500 erro interno
+	consome um json - exemplo: { 
+				"numero_pedido":1,
+				"nome_recebedor":"Fulano 1",
+				"cpf_recebedor":"11111111111",
+				"data_entrega":"2017-02-01"
+				}
+================================================================================
+
+Método para deletar uma entrega através do seu id
+Tipo: DELETE
+url: http://localhost/TrabalhoDM107PHPRest/src/public/entrega/{id}
+	deve passar o id da entrega na url ({id})
+	retorna um json da entrega com com status 200 - sucesso e 500 erro interno
+================================================================================
+
+Método para buscar uma entrega através do seu id
+Tipo: GET
+url: http://localhost/TrabalhoDM107PHPRest/src/public/entrega/{id}
+	deve passar o id da entrega na url ({id})
+	retorna um json da entrega com com status 200 - sucesso e 500 erro interno
